@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jewelry Store Template</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Jewelry</div>
+            <form class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">🔍</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Assets/Image/HomeSlide_1.jpg" alt="Luxury Jewelry">
+                </div>
+                <div class="slide">
+                    <img src="Assets/Image/HomeSlide_2.jpg" alt="Elegant Collection">
+                </div>
+                <div class="slide">
+                    <img src="Assets/Image/HomeSlide_3.jpg" alt="Timeless Designs">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </div>
+    </section>
     
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We create handcrafted jewelry that blends tradition and modernity.</p>
+        </div>
+    </section>
+
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2>Our Collections</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Assets/Image/Gold-Designs.jpg" alt="Collection">
+                    <h3>Gold Collection</h3>
+                </div>
+                <div class="card">
+                    <img src="Assets/Image/Diamond_Design.jpg" alt="Collection">
+                    <h3>Diamond Collection</h3>
+                </div>
+                <div class="card">
+                    <img src="Assets/Image/Platinium_Designs.jpg" alt="Collection">
+                    <h3>Platinum Collection</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Jewelry. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
 </body>
 </html>
