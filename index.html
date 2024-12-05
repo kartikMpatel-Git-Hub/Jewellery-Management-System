@@ -11,12 +11,15 @@
     <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">Jewelry</div>
-            <form class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">
+        <div id="header"></div>
+        <!--Remaining section-->
+        
+        <!-- <header>
+            <div class="navbar">
+                <div class="logo">Jewelry</div>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </form>
@@ -52,7 +55,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
 
     <div>
         <nav class="secondary-navbar">
@@ -131,7 +134,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="shop-by-category">
         <h2>Shop By Category</h2>
         <p>Browse through your favorite categories. We've got them all!</p>
@@ -216,7 +219,7 @@
             <p>We create handcrafted jewelry that blends tradition and modernity.</p>
         </div>
     </section>
-
+    
     <section id="collections" class="collections">
         <div class="container">
             <h2>Our Collections</h2>
@@ -236,7 +239,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="video-section">
         <h2>Watch Our Video</h2>
         <div class="video-container">
@@ -249,9 +252,8 @@
     
     
     
-    <footer>
+    <!-- <footer>
         <div class="footer-container">
-            <!-- Useful Links -->
             <div class="footer-column">
                 <h4>Useful Links</h4>
                 <ul>
@@ -263,8 +265,7 @@
                     <li><a href="#">Find a Store</a></li>
                 </ul>
             </div>
-    
-            <!-- Information -->
+            
             <div class="footer-column">
                 <h4>Information</h4>
                 <ul>
@@ -276,7 +277,6 @@
                 </ul>
             </div>
     
-            <!-- Contact Us -->
             <div class="footer-column">
                 <h4>Contact Us</h4>
                 <ul>
@@ -286,8 +286,7 @@
                 </ul>
             </div>
     
-            <!-- QR Code and App Links -->
-            <!-- <div class="footer-column">
+            <div class="footer-column">
                 <h4>Download the Tanishq App Now</h4>
                 <img src="qr-code.png" alt="QR Code" class="qr-code" />
                 <div class="app-links">
@@ -297,7 +296,7 @@
             </div> -->
         </div>
     
-        <!-- Footer Bottom Section -->
+        <!-- Footer Bottom Section 
         <div class="footer-bottom">
             <div class="footer-social">
                 <h4>Follow Us On</h4>
@@ -305,12 +304,44 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-    
+            
             <p>&copy; 2024 Jewellery. All Rights Reserved.</p>
             <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
         </div>
-    </footer>
+    </footer> -->
+    <div id="footer"></div>
     
-    <script src="JS/index.js"></script>
+    <script src="JS/index.js">
+        // Function to load and append the header
+        function loadHeader() {
+            fetch('header.html') // Ensure the header HTML file is in the same directory
+                .then(response => response.text())
+                .then(data => {
+                    const header = document.createElement('header');
+                    header.innerHTML = data;
+                    document.body.insertBefore(header, document.body.firstChild);
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Function to load and append the footer
+        function loadFooter() {
+            fetch('footer.html') // Ensure the footer HTML file is in the same directory
+                .then(response => response.text())
+                .then(data => {
+                    const footer = document.createElement('footer');
+                    footer.innerHTML = data;
+                    document.body.appendChild(footer);
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+
+        // Load header and footer
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHeader();
+            loadFooter();
+        });
+
+    </script>
 </body>
 </html>

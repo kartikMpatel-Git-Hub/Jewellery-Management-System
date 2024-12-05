@@ -1,3 +1,5 @@
+
+
 // Example JavaScript for Navbar Scroll
 document.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
