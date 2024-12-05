@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishq Store Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f0;
+        }
+
+        header {
+            background-color: #f8e7df;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #8b0000;
+        }
+
+        /* Popular Cities Section */
+        .content-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cities {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .city {
+            background-color: #fef6e4;
+            border: 1px solid #8b0000;
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 120px;
+            text-align: center;
+            font-size: 1rem;
+            color: #8b0000;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .city:hover {
+            transform: scale(1.1);
+            background-color: #fce1d2;
+        }
+
+        /* Marquee Section */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: #f8e7df;
+            padding: 15px 0;
+            margin: 20px 0;
+            border-top: 2px solid #8b0000;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+
+        .marquee-item {
+            display: inline-block;
+            margin: 0 50px;
+            font-size: 1.2rem;
+            color: #8b0000;
+            font-weight: bold;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .city {
+                width: 100px;
+                font-size: 0.9rem;
+            }
+
+            .marquee-item {
+                font-size: 1rem;
+                margin: 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Tanishq</h1>
+    </header>
+
+    <!-- Popular Cities Section -->
+    <div class="content-container">
+        <h2>Popular Cities</h2>
+        <div class="cities">
+            <div class="city">Mumbai</div>
+            <div class="city">Delhi</div>
+            <div class="city">Bangalore</div>
+            <div class="city">Hyderabad</div>
+            <div class="city">Lucknow</div>
+            <div class="city">Chennai</div>
+            <div class="city">Pune</div>
+            <div class="city">Kolkata</div>
+            <div class="city">Patna</div>
+            <div class="city">Jaipur</div>
+        </div>
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span class="marquee-item">Easy Exchange: Upgrade your gold with 100% value!</span>
+            <span class="marquee-item">Karatmeter: Ensuring gold purity measurements!</span>
+            <span class="marquee-item">Special Festive Offers Available Now!</span>
+            <span class="marquee-item">Visit Your Nearest Tanishq Store Today!</span>
+            <span class="marquee-item">Discover Exquisite Collections Online!</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.containt{
+    display: flex;
+    height: 98vh;
+    width: 99vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box{
+    border-radius: 30px;
+    height: 50vh;
+    width: 40vw;
+    background-color: silver;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.innerbox{
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 1vw 15vw 1vw 0vw;
+}
+.element{
+    padding: 10px;
+}
+.element label{
+    padding: 20px;
+}
+.element input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}

@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewelry Store Template</title>
+    <title>Gold Rate Today</title>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg">
-</head>
+    <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg"></head>
 <body>
     <header>
         <div class="navbar">
             <div class="logo">Jewelry</div>
             <form class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#collections">Collections</a></li>
-                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <button class="buy-now-button" id="openModalBtn">Log In</button>
                     <div class="modal" id="popupModal">
                         <div class="modal-content">
@@ -53,7 +50,6 @@
             </nav>
         </div>
     </header>
-
     <div>
         <nav class="secondary-navbar">
             <ul class="menu">
@@ -111,144 +107,102 @@
             </ul>
         </nav>
     </div>
-    
-    <section id="home" class="hero">
-        <div class="carousel">
-            <div class="slides">
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_1.jpg" alt="Luxury Jewelry">
-                </div>
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_2.jpg" alt="Elegant Collection">
-                </div>
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_3.jpg" alt="Timeless Designs">
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button id="prev">❮</button>
-                <button id="next">❯</button>
-            </div>
+    <header class="banner">
+        <img src="Assets/Image/Banner.jpg" alt="Tanishq Banner" class="banner-image">
+    </header>
+
+    <section class="gold-rate-section">
+        <h1 class="title">From Everyday Elegance To Bridal Grace, Cherish Every Moment With Tanishq’s Auspicious Gold Jewellery</h1>
+        <p class="description">
+            Tanishq offers a captivating collection of meticulously crafted gold pieces, each one whispering tales of tradition and heritage. 
+            Explore our diverse collection and discover pieces that resonate with your unique story as we believe that gold is a language for 
+            everyone. It’s more than just an ornament; it is a conversation starter, a confidence booster, and a treasured companion that 
+            elevates your everyday moments. Visit Tanishq today and together, let’s create a story that shines as brightly as you do.
+        </p>
+
+        <div class="table-wrapper">
+            <table class="gold-rate-table">
+                <thead>
+                    <tr>
+                        <th>Gram</th>
+                        <th>22 Carat Gold Today</th>
+                        <th>22 Carat Gold Yesterday</th>
+                        <th>Daily Price Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 gram</td>
+                        <td>₹ 7380</td>
+                        <td>₹ 7305</td>
+                        <td>₹ 75</td>
+                    </tr>
+                    <tr>
+                        <td>8 gram</td>
+                        <td>₹ 59,040</td>
+                        <td>₹ 58,440</td>
+                        <td>₹ 600</td>
+                    </tr>
+                    <tr>
+                        <td>10 gram</td>
+                        <td>₹ 73,800</td>
+                        <td>₹ 73,050</td>
+                        <td>₹ 750</td>
+                    </tr>
+                    <tr>
+                        <td>100 gram</td>
+                        <td>₹ 738,000</td>
+                        <td>₹ 730,500</td>
+                        <td>₹ 7,500</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="gold-rate-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>22 Carat</th>
+                        <th>24 Carat</th>
+                        <th>18 Carat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-11-24</td>
+                        <td>₹ 7380 (75)</td>
+                        <td>₹ 8051 (82)</td>
+                        <td>₹ 6038 (61)</td>
+                    </tr>
+                        <td>2024-11-23</td>
+                        <td>₹ 7305 (80)</td>
+                        <td>₹ 7969 (87)</td>
+                        <td>₹ 5977 (66)</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-22</td>
+                        <td>₹ 7225 (30)</td>
+                        <td>₹ 7882 (33)</td>
+                        <td>₹ 5911 (24)</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-21</td>
+                        <td>₹ 7195 (50)</td>
+                        <td>₹ 7849 (54)</td>
+                        <td>₹ 5887 (41)</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-20</td>
+                        <td>₹ 7380 (75)</td>
+                        <td>₹ 8051 (82)</td>
+                        <td>₹ 6038 (61)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
+        <button class="buy-now-button">Buy Now</button>
     </section>
 
-    <section class="shop-by-category">
-        <h2>Shop By Category</h2>
-        <p>Browse through your favorite categories. We've got them all!</p>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Mangalsutras">
-                <div class="category-content">
-                    <h3>Mangalsutras</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Gold Coins">
-                <div class="category-content">
-                    <h3>Gold Coins</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Earrings">
-                <div class="category-content">
-                    <h3>Earrings</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Finger Rings">
-                <div class="category-content">
-                    <h3>Finger Rings</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Pendants">
-                <div class="category-content">
-                    <h3>Pendants</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Nose Pins">
-                <div class="category-content">
-                    <h3>Nose Pins</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Bracelets">
-                <div class="category-content">
-                    <h3>Bracelets</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Bangles">
-                <div class="category-content">
-                    <h3>Bangles</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Neckwear">
-                <div class="category-content">
-                    <h3>Neckwear</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Necklace Set">
-                <div class="category-content">
-                    <h3>Necklace Set</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We create handcrafted jewelry that blends tradition and modernity.</p>
-        </div>
-    </section>
-
-    <section id="collections" class="collections">
-        <div class="container">
-            <h2>Our Collections</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="Assets/Image/Gold-Designs.jpg" alt="Collection">
-                    <h3>Gold Collection</h3>
-                </div>
-                <div class="card">
-                    <img src="Assets/Image/Diamond_Design.jpg" alt="Collection">
-                    <h3>Diamond Collection</h3>
-                </div>
-                <div class="card">
-                    <img src="Assets/Image/Platinium_Designs.jpg" alt="Collection">
-                    <h3>Platinum Collection</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-section">
-        <h2>Watch Our Video</h2>
-        <div class="video-container">
-            <video width="1280" height="720" autoplay muted loop>
-                <source src="Assets/Video/V1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-    
-    
-    
     <footer>
         <div class="footer-container">
             <!-- Useful Links -->
@@ -310,7 +264,6 @@
             <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
         </div>
     </footer>
-    
     <script src="JS/index.js"></script>
 </body>
 </html>

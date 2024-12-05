@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewelry Store Template</title>
+    <title>All Jewellery</title>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg">
+    <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg">    
 </head>
 <body>
     <header>
@@ -16,16 +16,14 @@
             <div class="logo">Jewelry</div>
             <form class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#collections">Collections</a></li>
-                    <li><a href="Store.html">Store</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <button class="buy-now-button" id="openModalBtn">Log In</button>
                     <div class="modal" id="popupModal">
                         <div class="modal-content">
@@ -53,7 +51,6 @@
             </nav>
         </div>
     </header>
-
     <div>
         <nav class="secondary-navbar">
             <ul class="menu">
@@ -111,144 +108,88 @@
             </ul>
         </nav>
     </div>
-    
-    <section id="home" class="hero">
-        <div class="carousel">
-            <div class="slides">
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_1.jpg" alt="Luxury Jewelry">
-                </div>
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_2.jpg" alt="Elegant Collection">
-                </div>
-                <div class="slide">
-                    <img src="Assets/Image/HomeSlide_3.jpg" alt="Timeless Designs">
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button id="prev">❮</button>
-                <button id="next">❯</button>
-            </div>
-        </div>
-    </section>
 
-    <section class="shop-by-category">
-        <h2>Shop By Category</h2>
-        <p>Browse through your favorite categories. We've got them all!</p>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Mangalsutras">
-                <div class="category-content">
-                    <h3>Mangalsutras</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Gold Coins">
-                <div class="category-content">
-                    <h3>Gold Coins</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Earrings">
-                <div class="category-content">
-                    <h3>Earrings</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Finger Rings">
-                <div class="category-content">
-                    <h3>Finger Rings</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Pendants">
-                <div class="category-content">
-                    <h3>Pendants</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Nose Pins">
-                <div class="category-content">
-                    <h3>Nose Pins</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Bracelets">
-                <div class="category-content">
-                    <h3>Bracelets</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Bangles">
-                <div class="category-content">
-                    <h3>Bangles</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Neckwear">
-                <div class="category-content">
-                    <h3>Neckwear</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-            <div class="category-card">
-                <img src="Assets/Image/Diamond_Design.jpg" alt="Necklace Set">
-                <div class="category-content">
-                    <h3>Necklace Set</h3>
-                    <a href="#" class="explore-btn">Explore</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We create handcrafted jewelry that blends tradition and modernity.</p>
-        </div>
-    </section>
+    <main class="all-jewellery-page">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <span>All Jewellery</span>
+        </nav>
 
-    <section id="collections" class="collections">
-        <div class="container">
-            <h2>Our Collections</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="Assets/Image/Gold-Designs.jpg" alt="Collection">
-                    <h3>Gold Collection</h3>
+        <!-- Page Title and Filters -->
+        <section class="page-header">
+            <h1>All Jewellery <span>(3 results)</span></h1>
+            <div class="filters">
+                <button class="filter-btn">Filter</button>
+                <div class="selected-filters">
+                    <span class="filter-tag">₹25k to ₹50k</span>
+                    <span class="filter-tag">Women</span>
+                    <span class="filter-tag">Gold Jewellery</span>
+                    <span class="filter-tag">22</span>
+                    <span class="filter-tag">Earrings</span>
                 </div>
-                <div class="card">
-                    <img src="Assets/Image/Diamond_Design.jpg" alt="Collection">
-                    <h3>Diamond Collection</h3>
-                </div>
-                <div class="card">
-                    <img src="Assets/Image/Platinium_Designs.jpg" alt="Collection">
-                    <h3>Platinum Collection</h3>
+                <div class="sort-by">
+                    <label for="sort-options">Sort By:</label>
+                    <select id="sort-options">
+                        <option value="best-matches">Best Matches</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="video-section">
-        <h2>Watch Our Video</h2>
-        <div class="video-container">
-            <video width="1280" height="720" autoplay muted loop>
-                <source src="Assets/Video/V1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-    
-    
-    
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Img_2.jpg" alt="Product 1" class="product-image" />
+                </div>
+                <h3>Product Name 1</h3>
+                <p class="price">₹ 41,431</p>
+                <p class="stock-status">In Stock</p>
+            </div>
+        
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Img_1.jpg" alt="Product 2" class="product-image" />
+                </div>
+                <h3>Product Name 2</h3>
+                <p class="price">₹ 33,961</p>
+                <p class="stock-status">Only 1 left!</p>
+            </div>
+        
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Img_3.jpg" alt="Product 3" class="product-image" />
+                </div>
+                <h3>Product Name 3</h3>
+                <p class="price">₹ 46,656</p>
+                <p class="stock-status">Out of Stock</p>
+            </div>
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Img_4.jpg" alt="Product 3" class="product-image" />
+                </div>
+                <h3>Product Name 3</h3>
+                <p class="price">₹ 46,656</p>
+                <p class="stock-status">Out of Stock</p>
+            </div>
+            <div class="post">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Post_1.jpg" alt="Product 3" class="product-image" width="100%"/>
+                </div>
+            </div>
+            <div class="post">
+                <div class="image-wrapper">
+                    <img src="Assets/Image/Post_1.jpg" alt="Product 3" class="product-image" width="100%"/>
+                </div>
+            </div>
+            <div class="product-card">
+                Anything
+            </div>
+        </div>        
+    </main>
+
     <footer>
         <div class="footer-container">
             <!-- Useful Links -->
@@ -310,7 +251,6 @@
             <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
         </div>
     </footer>
-    
     <script src="JS/index.js"></script>
 </body>
 </html>

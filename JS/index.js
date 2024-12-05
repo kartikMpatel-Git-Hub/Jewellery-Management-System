@@ -9,6 +9,29 @@ document.addEventListener("scroll", function () {
         navbar.style.boxShadow = "none";
     }
 });
+// Login 
+// Get references to the modal, open button, and close button
+const modal = document.getElementById("popupModal");
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+// Open the modal when the "Buy Now" button is clicked
+openModalBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+// Close the modal when the close button is clicked
+closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
 
 // Carousel Script
 const slides = document.querySelector('.slides');
