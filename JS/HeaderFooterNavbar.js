@@ -1,4 +1,4 @@
-// Function to load the footer HTML into the page
+
 function loadFooter() {
     fetch('footer.html')  // Path to your footer.html file
         .then(response => response.text())

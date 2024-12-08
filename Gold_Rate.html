@@ -10,103 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Assets/logo/logo.jpg"></head>
 <body>
+        
     <header>
-        <div class="navbar">
-            <div class="logo">Jewelry</div>
-            <form class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#collections">Collections</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <button class="buy-now-button" id="openModalBtn">Log In</button>
-                    <div class="modal" id="popupModal">
-                        <div class="modal-content">
-                            <span class="close-button" id="closeModalBtn">&times;</span>
-                            <div class="modal-left">
-                                <h2>Personalized Curations</h2>
-                                <p>Explore curations based on your interests</p>
-                            </div>
-                            <div class="modal-right">
-                                <h2>Welcome to Tanishq!</h2>
-                                <p>Login/Signup to get exclusive Tanishq privileges</p>
-                                <form>
-                                    <label for="mobile-number">Enter mobile number</label>
-                                    <div class="input-group">
-                                        <span>🇮🇳</span>
-                                        <input type="text" id="mobile-number" placeholder="Enter your number">
-                                    </div>
-                                    <button type="button" class="request-otp">Request OTP</button>
-                                </form>
-                                <p class="terms">By continuing, I agree to <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
-        </div>
+        <div id="headerTag"></div>
+        <div id="navBarTag"></div>
     </header>
-    <div>
-        <nav class="secondary-navbar">
-            <ul class="menu">
-                <li><a href="All_Jewellery.html">All Jewellery</a></li>
-                <li class="dropdown">
-                    <a href="#">Gold</a>
-                    <ul class="submenu">
-                        <li class="submenu-row">
-                            <div class="submenu-column">
-                                <strong>BANGLES & JEWELLERY</strong>
-                                <a href="#">BANGLES</a>
-                                <a href="#">BRACELETS</a>
-                                <a href="#">EARRINGS</a>
-                                <a href="#">GOLD CHAINS</a>
-                                <a href="#">PENDANTS</a>
-                                <a href="#">RINGS</a>
-                            </div>
-                            <div class="submenu-column">
-                                <strong>ENGAGEMENT & WEDDING</strong>
-                                <a href="#">ENGAGEMENT RINGS</a>
-                                <a href="#">NECKLACES</a>
-                                <a href="#">NOSE PINS</a>
-                                <a href="#">KADAS</a>
-                                <a href="#">MANGALSUTRAS</a>
-                                <a href="#">JHUMKAS</a>
-                            </div>
-                            <div class="submenu-column">
-                                <strong>TYPE OF JEWELLERY</strong>
-                                <a href="#">HOOP EARRINGS</a>
-                                <a href="#">STUD EARRINGS</a>
-                                <a href="#">DROP EARRINGS</a>
-                                <a href="#">MAANG TIKKA</a>
-                                <a href="#">NECKLACE SET</a>
-                                <a href="#">PENDANTS & EARRINGS SETS</a>
-                            </div>
-                            <div class="submenu-column">
-                                <strong>OTHER CATEGORIES</strong>
-                                <a href="#">MEN</a>
-                                <a href="#">GOLD COIN</a>
-                                <a href="#">METAL</a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">DIAMOND</a></li>
-                <li><a href="#">EARRINGS</a></li>
-                <li><a href="#">RINGS</a></li>
-                <li><a href="#">DIGITAL GOLD</a></li>
-                <li><a href="#">MIA</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="#">WEDDING</a></li>
-                <li><a href="#">GIFTING</a></li>
-                <li><a href="#">GOLDEN HARVEST</a></li>
-                <li><a href="Gold_Rate.html">Gold Rate</a></li>
-            </ul>
-        </nav>
-    </div>
+    
     <header class="banner">
         <img src="Assets/Image/Banner.jpg" alt="Tanishq Banner" class="banner-image">
     </header>
@@ -200,70 +109,11 @@
             </table>
         </div>
 
-        <button class="buy-now-button">Buy Now</button>
+        <button class="buy-now-button"><a href="All_Product.html">Buy Now</a></button>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <!-- Useful Links -->
-            <div class="footer-column">
-                <h4>Useful Links</h4>
-                <ul>
-                    <li><a href="#">Delivery Information</a></li>
-                    <li><a href="#">International Shipping</a></li>
-                    <li><a href="#">Payment Options</a></li>
-                    <li><a href="#">Track Your Order</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Find a Store</a></li>
-                </ul>
-            </div>
-    
-            <!-- Information -->
-            <div class="footer-column">
-                <h4>Information</h4>
-                <ul>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Offers & Contest Details</a></li>
-                    <li><a href="#">Help & FAQs</a></li>
-                    <li><a href="#">About Tanishq</a></li>
-                </ul>
-            </div>
-    
-            <!-- Contact Us -->
-            <div class="footer-column">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><a href="#">Write to Us</a></li>
-                    <li><a href="tel:18002660123">1800-266-0123</a></li>
-                    <li><a href="#">Chat with Us</a></li>
-                </ul>
-            </div>
-    
-            <!-- QR Code and App Links -->
-            <!-- <div class="footer-column">
-                <h4>Download the Tanishq App Now</h4>
-                <img src="qr-code.png" alt="QR Code" class="qr-code" />
-                <div class="app-links">
-                    <img src="app-store.png" alt="App Store" />
-                    <img src="google-play.png" alt="Google Play" />
-                </div>
-            </div> -->
-        </div>
-    
-        <!-- Footer Bottom Section -->
-        <div class="footer-bottom">
-            <div class="footer-social">
-                <h4>Follow Us On</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-    
-            <p>&copy; 2024 Jewellery. All Rights Reserved.</p>
-            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a></p>
-        </div>
-    </footer>
+    <div id="footerTag"></div>
+    <script src="JS/HeaderFooterNavbar.js"></script>
     <script src="JS/index.js"></script>
 </body>
 </html>

@@ -1,3 +1,26 @@
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  if (index >= totalSlides) currentIndex = 0;
+  else if (index < 0) currentIndex = totalSlides - 1;
+  else currentIndex = index;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Auto slide every 5 seconds
+setInterval(() => {
+  nextSlide();
+}, 2000);
 
 
 // Example JavaScript for Navbar Scroll
@@ -11,51 +34,16 @@ document.addEventListener("scroll", function () {
         navbar.style.boxShadow = "none";
     }
 });
-// Login 
-// Get references to the modal, open button, and close button
-const modal = document.getElementById("popupModal");
-const openModalBtn = document.getElementById("openModalBtn");
-const closeModalBtn = document.getElementById("closeModalBtn");
 
-// Open the modal when the "Buy Now" button is clicked
-openModalBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
+//Term&Condition 
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const activeHeader = document.querySelector('.accordion-header.active');
+        if (activeHeader && activeHeader !== header) {
+            activeHeader.classList.remove('active');
+            activeHeader.nextElementSibling.classList.remove('active');
+        }
+        header.classList.toggle('active');
+        header.nextElementSibling.classList.toggle('active');
+    });
 });
-
-// Close the modal when the close button is clicked
-closeModalBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-});
-
-// Close the modal when clicking outside the modal content
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
-
-// Carousel Script
-const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
-let currentIndex = 0;
-
-document.querySelector('#next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slideCount;
-    updateCarousel();
-});
-
-document.querySelector('#prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-    updateCarousel();
-});
-
-function updateCarousel() {
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Auto-slide every 5 seconds
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % slideCount;
-    updateCarousel();
-}, 5000);

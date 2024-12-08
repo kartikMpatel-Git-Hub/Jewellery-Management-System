@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jewelry Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    
-<header>
-    <div id="headerTag"></div>
-</header>
-<section>
-    <div id="navBarTag"></div>
-</section>
-<div id="footerTag"></div>
-<script src="JS/index.js"></script>
-<script src="JS/HeaderFooterNavbar.js"></script>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="CSS/Home.css" />
+  </head>
+  <body>
+    <header>
+      <div id="headerTag"></div>
+    </header>
+    <section>
+      <div id="navBarTag"></div>
+    </section>
+
+    <section id="home" class="hero">
+      <div class="carousel">
+        <div class="slides">
+          <div class="slide">
+            <img src="Assets/Image/HomeSlide_1.jpg" alt="Luxury Jewelry" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Image/HomeSlide_2.jpg" alt="Elegant Collection" />
+          </div>
+          <div class="slide">
+            <img src="Assets/Image/HomeSlide_3.jpg" alt="Timeless Designs" />
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prev">❮</button>
+          <button id="next">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="collections">
+      <div class="container">
+        <h2>Our Collections</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="Assets/Image/Gold-Designs.jpg" alt="Collection" />
+            <h3>Gold Collection</h3>
+          </div>
+          <div class="card">
+            <img src="Assets/Image/Diamond_Design.jpg" alt="Collection" />
+            <h3>Diamond Collection</h3>
+          </div>
+          <div class="card">
+            <img src="Assets/Image/Platinium_Designs.jpg" alt="Collection" />
+            <h3>Platinum Collection</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h2>Watch Our Video</h2>
+      <div class="video-container">
+        <video width="1280" height="720" autoplay muted loop>
+          <source src="Assets/Video/V1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <div id="footerTag"></div>
+    <script src="JS/index.js"></script>
+    <script src="JS/HeaderFooterNavbar.js"></script>
+    <script></script>
+  </body>
 </html>
