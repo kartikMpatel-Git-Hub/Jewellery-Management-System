@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'roboto';
     color: #333;
     line-height: 1.6;
 }
@@ -21,7 +21,7 @@ body {
 }
 .header .logo {
     font-size: 2rem;
-    font-family: 'Math Sans', sans-serif;
+    font-family: 'roboto';
     font-weight: bold;
 }
 .header .logo a {
@@ -91,7 +91,7 @@ body {
 }
 /* General Navigation Bar Styling */
 .secondary-navbar {
-    font-family: 'Playfair Display', serif;
+    font-family: 'roboto';
     /* background-color: #f9f3f0; */
     padding: 20px 0;
     position: relative; /* Ensure proper stacking context */
@@ -109,7 +109,7 @@ body {
 .menu > li {
     position: relative;
     margin-right: 30px;
-    /* font-family: Arial, sans-serif; */
+    /* font-family: 'roboto';: Arial, sans-serif; */
 }
 
 .menu a {
@@ -227,7 +227,7 @@ body {
 }
 .hero h1 {
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'roboto';
 }
 .hero p {
     margin: 20px 0;
@@ -349,7 +349,7 @@ body {
     text-align: center;
 }
 .about h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'roboto';
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -360,7 +360,7 @@ body {
     text-align: center;
 }
 .collections h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'roboto';
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -697,6 +697,7 @@ video {
 
 /* Gold Rate Section */
 .gold-rate-section {
+    box-shadow: 0px 0px 20px .1px rgba(0, 0, 0, 0.100);
     padding: 20px;
     text-align: center;
 }

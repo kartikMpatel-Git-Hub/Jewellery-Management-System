@@ -15,7 +15,7 @@
 }
 .header .logo {
     font-size: 2rem;
-    font-family: 'Math Sans', sans-serif;
+    font-family: 'roboto';
     font-weight: bold;
 }
 .header .logo a {
@@ -87,7 +87,7 @@
 
 /* General Navigation Bar Styling */
 .secondary-navbar {
-    font-family: 'Playfair Display', serif;
+    font-family: 'roboto';
     /* background-color: #f9f3f0; */
     padding: 20px 0;
     position: relative; /* Ensure proper stacking context */
@@ -105,7 +105,7 @@
 .menu > li {
     position: relative;
     margin-right: 30px;
-    /* font-family: Arial, sans-serif; */
+    /* font-family: 'roboto';: Arial, sans-serif; */
 }
 
 .menu a {
