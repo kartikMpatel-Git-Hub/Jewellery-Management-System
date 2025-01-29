@@ -15,6 +15,8 @@ body {
     margin-bottom: 20px;
 }
 .product-part{
+    box-shadow: 0 .5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -58,24 +60,43 @@ body {
 .details .icon {
     margin-right: 10px;
 }
-.image-container {
-    width: 100%;
-    text-align: center;
-    gap: 10px;
+.image {
+    margin-top: 50px;
+    position: relative;
 }
-.image-container img {
-    max-width: 100%;
-    border-radius: 10px;
+.image img {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+}
+.image .prev, .image .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.image .prev:hover, .image .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.image .prev {
+    left: 10px;
+}
+.image .next {
+    right: 10px;
 }
 .price-container {
-    /* display: inline-block; */
-    /* align-items: center; */
+    display: inline-block;
+    align-items: center;
     justify-content: center;
-    margin: 0 40%;
+    margin: 10% 40%;
 }
 .price-container .price {
-    padding: 10px;
-    text-align: center;
     font-size: 24px;
     font-weight: 700;
 }
@@ -86,14 +107,14 @@ body {
 .price-container .add-to-cart {
     background-color: #8b0000;
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .tab-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .tab-container button {
     background-color: #8b0000;

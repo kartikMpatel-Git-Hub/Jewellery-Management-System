@@ -82,7 +82,85 @@ body{
 .carousel-controls button:hover {
     background: rgba(0, 0, 0, 0.7);
 }
-
+/* Line Break */
+.title {
+    color: #7b2b2a;
+    font-size: 36px;
+    margin: 80px 0 10px;
+    display: flex;
+    justify-content: center;
+}
+.subtitle {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.divider-line {
+    width: 40%;
+    height: 1px;
+    background-color: #7b2b2a;
+}
+.divider-icon {
+    margin: 0 10px;
+    color: #7b2b2a;
+    font-size: 24px;
+}
+/* Product*/
+.categories {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.category {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    background-color: #fff;
+    display: flexbox;
+}
+.category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.category .info {
+    padding: 10px;
+}
+.category .info h3 {
+    color: #7a2a2a;
+    margin: 0 0 5px;
+}
+.category .info p {
+    color: #7a2a2a;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category .info p i {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .header input {
+        width: 70%;
+    }
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 /*Video */
 
 .video-section {
@@ -92,7 +170,7 @@ body{
 
 .video-section h2 {
     font-size: 2.5rem;
-    color: #7e5a3e;
+    color: #7b2b2a;
     margin-bottom: 20px;
 }
 
@@ -113,7 +191,7 @@ video {
 /* Collection  */
 
 .collections {
-    color:#7e5a3e;
+    color:#7a2a2a;
     display: flex;
     padding: 40px 20px;
     text-align: center;
@@ -132,8 +210,8 @@ video {
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
-    height: 210px;
+    width: 500px;
+    height: 400px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -148,5 +226,5 @@ video {
 a{
     text-decoration: none;
     /* color: red; */
-    color: #7e5a3e;
+    color: #7a2a2a;
 }

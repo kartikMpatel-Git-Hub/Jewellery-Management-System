@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'roboto';
+    /* font-family: sans-serif; */
     color: #333;
     line-height: 1.6;
+
 }
-.container {
+.container{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
     scroll-margin-top: 200px;
-    width: 80%;
+    width: 100%;
     /* margin-top: 100px; */
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
 }
 h1, h2 {
     color: #f08080;

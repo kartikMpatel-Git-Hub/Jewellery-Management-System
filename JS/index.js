@@ -47,3 +47,16 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         header.nextElementSibling.classList.toggle('active');
     });
 });
+
+function changePage(page){
+  switch(page){
+    case 'diamond':
+      window.location.href = "Product.html?page=platinumProduct";
+      break;
+    case 'wedding':
+      window.location.href = "Product.html?page=goldProduct";
+      break;
+      default:
+      window.location.href = "Product.html?page=allProduct";
+  }
+}

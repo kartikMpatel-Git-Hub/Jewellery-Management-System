@@ -53,28 +53,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="image-container">
-                        <!-- <p>SKU ID: 50D3PTSCMABA092JD000744</p> -->
-                        <img id="productImg" src="Assets/Image/Jewellery/Gold/GoldRing1.png"  alt="" height="500px" width="700px">
-                        <p> Enjoy sparkling jewellery! We provide free jewellery cleaning services!</p>
-                    </div>
+                <div class="right">  
+                    <div class="image">
+                        <img id="productImg" alt="Gold Bangles" class="slider-image" height="400" src="" width="400"/>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                        <p>Enjoy sparkling jewellery! We provide free jewellery cleaning services!</p>
+                    </div>    
+                    <!-- <div class="image">
+                        <img id="productImg" alt="" class="slider-image" height="400" src="" width="400"/>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                        <p>Enjoy sparkling jewellery! We provide free jewellery cleaning services!</p>
+                    </div> -->
                     <div class="price-container">
                         <div class="price" id="productPrice">₹40 937</div>
-                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart" onclick="addcart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="tab-container">
                 <button id="OtherProductbtn" onclick="otherProduct()">View Similar Product</button>
-                <!-- <button id="OtherProductbtn" onclick="otherProduct()">View Similar Type</button> -->
             </div>
         </div>
     </section>
     <footer>
       <div id="footerTag"></div>
     </footer>
-    <script src="JS/singleProduct.js"></script>
+    <script src="JS/singleProduct.js">
+    </script>
     <script src="JS/HeaderFooterNavbar.js"></script>
   </body>
 </html>
